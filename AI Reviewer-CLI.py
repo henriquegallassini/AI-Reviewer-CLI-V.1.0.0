@@ -30,11 +30,11 @@ def analisar_codigo(caminho_arquivo):
 
             tamanho = no.end_lineno - no.lineno
             if tamanho > 20:
-                    tabela.add_row(
-                        str(no.lineno),
-                        f"📏 Função muito longa ({tamanho} linhas)",
-                        no.name
-                    )
+                tabela.add_row(
+                    str(no.lineno),
+                    f"📏 Função muito longa ({tamanho} linhas)",
+                    no.name
+                )
 
         if isinstance(no, ast.Name):
             if len(no.id) == 1 and no.id not in ["i", "j", "k", "n", "_"]:

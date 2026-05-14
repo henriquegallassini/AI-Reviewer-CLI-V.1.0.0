@@ -36,13 +36,13 @@ def analisar_codigo(caminho_arquivo):
                         no.name
                     )
 
-            if isinstance(no, ast.Name):
-                 if len(no.id) == 1 and no.id not in ["i", "j", "k", "n", "_"]:
-                      tabela.add_row(
-                           str(no.col_offset),
-                           f"🏷️  Nome de variável muito curto: '{no.id}'",
-                           "-"
-                      )
+        if isinstance(no, ast.Name):
+            if len(no.id) == 1 and no.id not in ["i", "j", "k", "n", "_"]:
+                tabela.add_row(
+                    str(no.col_offset),
+                    f"🏷️  Nome de variável muito curto: '{no.id}'",
+                    "-"
+            )
     
     total_problemas = len(tabela.rows)
 

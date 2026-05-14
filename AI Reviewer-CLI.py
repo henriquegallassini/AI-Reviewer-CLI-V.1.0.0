@@ -29,7 +29,7 @@ def analisar_codigo(caminho_arquivo):
                 )
 
             tamanho = no.end_lineno - no.lineno
-            if tamanho > 20:
+            if tamanho > 200:
                     tabela.add_row(
                         str(no.lineno),
                         f"📏 Função muito longa ({tamanho} linhas)",

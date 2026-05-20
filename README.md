@@ -1,4 +1,4 @@
-🔍 AI Reviewer CLI
+🔍 Reviewer CLI
 Um analisador de código Python inteligente que roda direto no terminal — sem API, sem custo, 100% local.
 
 💡 O que faz
